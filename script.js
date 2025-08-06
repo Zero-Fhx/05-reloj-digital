@@ -56,7 +56,7 @@ function obtainDay() {
   ];
 
   const day = days[time.getDay()];
-  const date = time.getDate();
+  const date = String(time.getDate()).padStart(2, "0");
   const month = months[time.getMonth()];
   const year = time.getFullYear();
 
@@ -80,7 +80,7 @@ function updateTime(hours, minutes, seconds, meridian) {
 
 function updateDay(day, date, month, year) {
   dayElement.textContent = day;
-  dateElement.textContent = String(date).padStart(2, "0");
+  dateElement.textContent = date;
   monthElement.textContent = month;
   yearElement.textContent = year;
 }
