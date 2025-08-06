@@ -13,9 +13,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
   </head>
   <body>
-    <main></main>
+    <main>
+      <div class="clock">
+        <h1>Reloj Digital</h1>
+        <div class="time">
+          <span id="hours">00</span>: <span id="minutes">00</span>:
+          <span id="seconds">00</span>
+          <span id="meridian">AM</span>
+        </div>
+        <div class="date">
+          <span id="day">Lunes</span>, <span id="date">00</span> de
+          <span id="month">Enero</span> de <span id="year">0000</span>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

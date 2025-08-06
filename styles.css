@@ -4,3 +4,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.time {
+  font-size: 6rem;
+}
+
+.date {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #555;
+}
