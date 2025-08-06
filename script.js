@@ -16,7 +16,7 @@ function obtainTime() {
   const hours = time.getHours() % 12 || 12;
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
-  const meridian = hours >= 12 ? "PM" : "AM";
+  const meridian = time.getHours() >= 12 ? "PM" : "AM";
 
   const formattedHours = String(hours).padStart(2, "0");
   const formattedMinutes = String(minutes).padStart(2, "0");
